@@ -27,8 +27,6 @@ struct NotificationRowView: View {
                     .customFont(weight: .regular, size: 10)
             }
             .foregroundColor(.black222020())
-
-            CustomDivider(color: .grayEFEFEF())
         }
         .padding()
     }

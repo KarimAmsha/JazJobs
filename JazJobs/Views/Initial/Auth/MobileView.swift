@@ -34,19 +34,19 @@ struct MobileView: View {
                         .foregroundColor(.primaryBlack())
                 }
                 
-                TextField(countryPatternPalceholder, text: $mobile)
+                TextField("", text: $mobile)
                     .placeholder(when: mobile.isEmpty) {
                         Text(countryPatternPalceholder)
                             .foregroundColor(.gray999999())
                     }
                     .focused($keyIsFocused)
                     .customFont(weight: .regular, size: 14)
-                    .foregroundColor(.black1C2433())
+                    .foregroundColor(.primary)
                     .keyboardType(.phonePad)
                     .onReceive(Just(mobile)) { _ in
                         applyPatternOnNumbers(&mobile, pattern: countryPattern, replacementCharacter: "#")
                     }
-                    .accentColor(.primary())
+                    .accentColor(.primary)
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 18)

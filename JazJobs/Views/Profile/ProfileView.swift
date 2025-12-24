@@ -51,7 +51,7 @@ struct ProfileView: View {
                         // من نحن؟
                         SettingRow(
                             title: LocalizedStringKey.aboutUs,
-                            subtitle: LocalizedStringKey.aboutUsHint,
+                            subtitle: LocalizedStringKey.aboutUs,
                             icon: Image("ic_support"),
                             tint: .blueEBF0FC(),
                             iconForeground: .blue3A70E2()
@@ -65,8 +65,8 @@ struct ProfileView: View {
 
                         // سياسة الاستخدام والخصوصية
                         SettingRow(
-                            title: LocalizedStringKey.termsOfUseAndPrivacyPolicy,
-                            subtitle: LocalizedStringKey.termsOfUseAndPrivacyPolicyHint,
+                            title: LocalizedStringKey.termsConditions,
+                            subtitle: LocalizedStringKey.termsConditions,
                             icon: Image("ic_lock"),
                             tint: .blueEBF0FC(),
                             iconForeground: .blue3A70E2()
@@ -97,7 +97,7 @@ struct ProfileView: View {
                         // تسجيل الخروج
                         SettingRow(
                             title: LocalizedStringKey.logout,
-                            subtitle: LocalizedStringKey.logoutHint,
+                            subtitle: LocalizedStringKey.logout,
                             icon: Image("ic_logout"),
                             tint: Color.orangeFCE5E5(),
                             iconForeground: .redE50000()

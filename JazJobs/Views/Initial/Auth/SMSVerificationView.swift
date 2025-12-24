@@ -97,8 +97,6 @@ struct SMSVerificationView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 HStack {
-                    Image("ic_gift")
-
                     VStack(alignment: .leading, spacing: 2) {
                         Text(LocalizedStringKey.enterOTP)
                             .customFont(weight: .bold, size: 20)

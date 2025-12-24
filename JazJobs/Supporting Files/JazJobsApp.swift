@@ -19,6 +19,7 @@ struct JazJobsApp: App {
     @StateObject private var userViewModel = UserViewModel(errorHandling: ErrorHandling())
     @StateObject private var settings = UserSettings.shared
     @StateObject var cartViewModel = CartViewModel(errorHandling: ErrorHandling())
+    @StateObject private var appRouter = AppRouter()
 
     init() {
         UserDefaults.standard.set([languageManager.currentLanguage.identifier], forKey: "AppleLanguages")
@@ -35,6 +36,7 @@ struct JazJobsApp: App {
                 .environmentObject(authViewModel)
                 .environmentObject(settings)
                 .environmentObject(cartViewModel)
+                .environmentObject(appRouter)
                 .onAppear {
                     cartViewModel.fetchCartCount()
                 }

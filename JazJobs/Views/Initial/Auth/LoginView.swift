@@ -106,8 +106,6 @@ struct LoginView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 HStack {
-                    Image("ic_gift")
-
                     VStack(alignment: .leading, spacing: 2) {
                         Text(LocalizedStringKey.login)
                             .customFont(weight: .bold, size: 20)
